@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Wisata Tumpak Sewu</title>
+
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: Verdana, Arial, sans-serif;
+            margin: 0;
+            padding: 30px;
+            color: #333333;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #800080;
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        .subjudul {
+            text-align: center;
+            color: #3366cc;
+            font-size: 15px;
+            font-style: italic;
+            margin-bottom: 25px;
+        }
+
+        .video-section {
+            margin-bottom: 25px;
+            padding: 20px;
+            background-color: #f8f5fa;
+            border: 1px solid #e2d4ec;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .video-section h3 {
+            color: #800080;
+            margin-top: 0;
+        }
+
+        .video-placeholder {
+            background: #e2d4ec;
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        .video-placeholder video {
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .gallery-item {
+            background-color: #f3f0f7;
+            border: 1px solid #e2d4ec;
+            border-radius: 6px;
+            overflow: hidden;
+            text-align: center;
+            font-size: 13px;
+            color: #800080;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-item p {
+            padding: 5px;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-3px);
+            background-color: #f1e3f5;
+        }
+
+        .penutup {
+            text-align: center;
+            margin-top: 25px;
+            color: #3366cc;
+            font-style: italic;
+        }
+
+        @media (max-width: 500px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Galeri Foto & Video</h2>
+
+    <div class="subjudul">
+        Dokumentasi Keindahan & Sinematik Air Terjun Tumpak Sewu
+    </div>
+
+    <!-- VIDEO -->
+    <div class="video-section">
+
+        <h3>🎬 Video Sinematik</h3>
+
+        <p>
+            Saksikan keindahan panorama udara dan bawah air
+            terjun Tumpak Sewu:
+        </p>
+
+        <div class="video-placeholder">
+
+            <video controls>
+                <source src="tumpak-sewu.mp4" type="video/mp4">
+                Browser Anda tidak mendukung pemutar video.
+            </video>
+
+        </div>
+
+    </div>
+
+    <!-- GALERI FOTO -->
+    <div class="video-section" style="text-align: left;">
+
+        <h3>📸 Galeri Foto (6 Spot Wisata)</h3>
+
+        <p>
+            Berikut adalah koleksi dokumentasi foto
+            pemandangan Tumpak Sewu:
+        </p>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img src="foto 1.jpg" alt="Panorama Dari Atas">
+                <p>Panorama Dari Atas</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="foto 2.jpg" alt="Tebing Amfiteater">
+                <p>Tebing Amfiteater</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="foto 3.jpg" alt="Aliran Air Utama">
+                <p>Aliran Air Utama</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="foto 4.jpg" alt="Trekking Lembah">
+                <p>Trekking Lembah</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="foto 5.jpg" alt="Goa Tetes">
+                <p>Goa Tetes & Batuan</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="foto 6.jpg" alt="Air Mengalir">
+                <p>Air Mengalir</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="penutup">
+        Abadikan momen terbaik liburan Anda di Tumpak Sewu!
+    </div>
+
+</div>
+
+</body>
+</html>

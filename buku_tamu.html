@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Tamu - Wisata Air Terjun Tumpak Sewu</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            background: #fff;
+            font-family: Verdana, Arial, sans-serif;
+            margin: 0;
+            padding: 30px;
+            color: #333333;
+        }
+        .container { max-width: 750px; margin: auto; }
+        h2 {
+            text-align: center;
+            color: #800080;
+            font-size: 25px;
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+        .subjudul {
+            text-align: center;
+            color: #3366cc;
+            font-size: 14px;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .form-group { margin-bottom: 18px; }
+        label {
+            display: block;
+            color: #800080;
+            font-weight: bold;
+            margin-bottom: 7px;
+            font-size: 14px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 11px;
+            border: 1px solid #e2d4ec;
+            border-radius: 6px;
+            font-family: Verdana, Arial, sans-serif;
+            font-size: 13px;
+            background-color: #f8f0fa;
+            color: #333333;
+        }
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            background-color: #f1e3f5;
+            border-color: #800080;
+        }
+        textarea { height: 90px; resize: vertical; }
+        .pilihan {
+            background-color: #f8f0fa;
+            padding: 12px 15px;
+            border-radius: 7px;
+            border: 1px solid #e2d4ec;
+        }
+        .pilihan label {
+            display: inline;
+            color: #333333;
+            font-weight: normal;
+            margin-bottom: 0;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            accent-color: #800080;
+        }
+        .tombol { text-align: center; margin-top: 25px; }
+        button {
+            padding: 11px 25px;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: Verdana, Arial, sans-serif;
+            margin: 5px;
+            transition: background 0.2s;
+        }
+        .btn-kirim { background-color: #800080; }
+        .btn-kirim:hover { background-color: #660066; }
+        .btn-reset { background-color: #660066; }
+        .btn-reset:hover { background-color: #500250; }
+        .penutup {
+            text-align: center;
+            margin-top: 25px;
+            color: #3366cc;
+            font-size: 13px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Buku Tamu Kunjungan</h2>
+    <div class="subjudul">Wisata Air Terjun Tumpak Sewu, Jawa Timur</div>
+
+    <form>
+        <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+        </div>
+
+        <div class="form-group">
+            <label for="nik">Nomor Identitas (KTP / NISN)</label>
+            <input type="text" id="nik" name="nik" placeholder="Masukkan Nomor Identitas" maxlength="16"
+            oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+        </div>
+
+        <div class="form-group">
+            <label for="ttl">Tempat, Tanggal Lahir</label>
+            <input type="text" id="ttl" name="ttl" placeholder="Contoh: Malang, 10 Januari 2000" required>
+        </div>
+
+        <div class="form-group">
+            <label>Jenis Kelamin</label>
+            <div class="pilihan">
+                <label><input type="radio" name="jenis_kelamin" value="Laki-laki" required> Laki-laki</label><br>
+                <label><input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="alamat">Alamat Lengkap</label>
+            <textarea id="alamat" name="alamat" placeholder="Masukkan alamat lengkap asal Anda" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="pesan">Kesan & Pesan Kunjungan</label>
+            <textarea id="pesan" name="pesan" placeholder="Masukkan kesan dan pesan selama berkunjung di Tumpak Sewu" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="telepon">Nomor HP / WhatsApp</label>
+            <input type="tel" id="telepon" name="telepon" placeholder="Masukkan nomor HP" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email aktif">
+        </div>
+
+        <div class="form-group">
+            <label>Kategori Kunjungan yang Dipilih</label>
+            <div class="pilihan">
+                <label><input type="radio" name="kategori" value="Panorama Atas" required> Wisata Panorama Atas (Spot Utama)</label><br>
+                <label><input type="radio" name="kategori" value="Trekking Lembah"> Trekking Lembah & Dasar Air Terjun</label><br>
+                <label><input type="radio" name="kategori" value="Goa Tetes"> Jelajah Goa Tetes</label><br>
+                <label><input type="radio" name="kategori" value="Paket Lengkap"> Paket Wisata Lengkap</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Aktivitas & Fasilitas yang Diminati</label>
+            <div class="pilihan">
+                <label><input type="checkbox" name="aktivitas" value="Spot Foto Utama"> Spot Foto Utama</label><br>
+                <label><input type="checkbox" name="aktivitas" value="Turun ke Lembah Air Terjun"> Turun ke Lembah Air Terjun</label><br>
+                <label><input type="checkbox" name="aktivitas" value="Eksplorasi Goa Tetes"> Eksplorasi Goa Tetes</label><br>
+                <label><input type="checkbox" name="aktivitas" value="Kuliner Lokal"> Kuliner Lokal</label><br>
+                <label><input type="checkbox" name="aktivitas" value="Camping Ground"> Camping Ground</label><br>
+                <label><input type="checkbox" name="aktivitas" value="Fotografi & Videografi"> Fotografi & Videografi</label><br>
+                <label><input type="checkbox" name="aktivitas" value="Pemandu Wisata (Guide)"> Pemandu Wisata (Guide)</label>
+            </div>
+        </div>
+
+        <div class="tombol">
+            <button type="submit" class="btn-kirim">Submit</button>
+            <button type="reset" class="btn-reset">Reset</button>
+        </div>
+    </form>
+
+    <div class="penutup">
+        Terima kasih telah mengisi buku tamu kunjungan Wisata Tumpak Sewu!
+    </div>
+</div>
+</body>
+</html>

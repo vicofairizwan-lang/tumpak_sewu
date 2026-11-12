@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kelompok Kami - Wisata Tumpak Sewu</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: Verdana, Arial, sans-serif;
+            margin: 0;
+            padding: 30px;
+            color: #333333;
+        }
+        .container { max-width: 750px; margin: auto; }
+        h2 {
+            text-align: center;
+            color: #800080;
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+        .subjudul {
+            text-align: center;
+            color: #3366cc;
+            font-size: 15px;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .grid-kelompok {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .kartu-anggota {
+            background-color: #f8f5fa;
+            border: 1px solid #e2d4ec;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+            transition: transform 0.2s;
+        }
+        .kartu-anggota:hover {
+            transform: translateY(-3px);
+            border-color: #800080;
+        }
+        .foto-anggota {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 12px auto;
+            border: 3px solid #800080;
+            background-color: #e2d4ec;
+            display: block;
+        }
+        .nama-anggota {
+            color: #800080;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .peran-anggota {
+            color: #3366cc;
+            font-size: 12px;
+            font-style: italic;
+        }
+        .penutup {
+            text-align: center;
+            margin-top: 30px;
+            color: #3366cc;
+            font-style: italic;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Profil Kelompok Kami</h2>
+        <div class="subjudul">Tim Pengembang Website Wisata Air Terjun Tumpak Sewu (5 Anggota)</div>
+
+        <div class="grid-kelompok">
+            <!-- Anggota 1 -->
+            <div class="kartu-anggota">
+                <img src="foto1.jpg" alt="Foto Anggota 1" class="foto-anggota">
+                <div class="nama-anggota">Novia Wahyu Ning Tyas </div>
+                <div class="peran-anggota">Peyusun laporan</div>
+            </div>
+
+            <!-- Anggota 2 -->
+            <div class="kartu-anggota">
+                <img src="foto2.jpg" alt="Foto Anggota 2" class="foto-anggota">
+                <div class="nama-anggota">Vico Fairi Wizwan</div>
+                <div class="peran-anggota">Tugas yang bagian Coding</div>
+            </div>
+
+            <!-- Anggota 3 -->
+            <div class="kartu-anggota">
+                <img src="foto3.jpg" alt="Foto Anggota 3" class="foto-anggota">
+                <div class="nama-anggota">keysha Alfara Putri</div>
+                <div class="peran-anggota">Mencari informasi laporan di internet</div>
+            </div>
+
+            <!-- Anggota 4 -->
+            <div class="kartu-anggota">
+                <img src="foto4.jpg" alt="Foto Anggota 4" class="foto-anggota">
+                <div class="nama-anggota">Kanaya Aulia</div>
+                <div class="peran-anggota">Mencari Foto di Internet untuk laporan dan coding </div>
+            </div>
+
+            <!-- Anggota 5 -->
+            <div class="kartu-anggota">
+                <img src="foto5.jpg" alt="Foto Anggota 5" class="foto-anggota">
+                <div class="nama-anggota">Putra Pratama</div>
+                <div class="peran-anggota">Peyedia Internet</div>
+            </div>
+        </div>
+
+        <div class="penutup">
+            Terima kasih telah mengunjungi halaman profil kelompok kami!
+        </div>
+    </div>
+</body>
+</html>
